@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 1px) and (max-width: 2000px) {
+@media (min-width: 400px) and (max-width: 2000px) {
+
+/* The Grid ---------------------- */
+.row { max-width: 100%; min-width: 768px; margin: 0 auto; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row.collapse .column, .row.collapse .columns { padding: 0; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row .row.collapse { margin: 0; }
+
 
 .main {
   margin: 0;
@@ -10,7 +18,7 @@
   background-color: #FFFFFF;
   padding-right: 10%;
   padding-left: 10%;
-	width: 100%;
+  width: 100%;
   color: black;
 }
 
@@ -71,10 +79,6 @@ This class makes the topnav look good on small screens (display the links vertic
   }
 }
 
-.head {
-	text-align: center;
-}
-
 .logo {
 	float:left;
 	width: 110px;
@@ -99,11 +103,14 @@ This class makes the topnav look good on small screens (display the links vertic
 .left_panel {
   float:left;
   width: 15%;
-  clear: left;
+  content: "";
+  padding-right: 20px;
+  clear: both;
+  display: block;
 }
 
 .social_media {
-	width: 15%;
+  width: 15%;
   float:left;
 }
 
@@ -131,57 +138,69 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .main_panel {
-  float: center;
   color: #AFCDEC;
-  width: 60%;
+  width: 80%;
   text-align: center;
   overflow: hidden;
 }
 
 .shop_container {
 	display: grid;
+	width: 70%;
 	grid-template-columns: auto auto auto;
 	padding: 10px;
 }
+@media only screen and (max-width: 600px) {
+    .shop_container {
+		width: 50%;
+    }
+}
+
 
 .shop-item {
   padding: 5px;
-  text-align: center;
 }
 
 .shop-item img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+   
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 600px) {
+    .shop-item {
+		width: 100%;
+    }
+}
+
 .advert {
-	Padding: 50px;
-	float: center;
-	width:33.33%;
+	width:100%;
 	position:relative;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .main_panel {
-  width: 70%;
-  }
+.newsletter {
+	width:100%;
+	position:relative;
+	padding: 20px;
 }
+
 
 /* Slideshow container */
-.slideshow-container {
-  max-width: 100px;
-  position: center;
-  text-align: left;
+.slideshow {
+  max-width: 100%;
+  height:auto;
   margin: auto;
-  padding-left:200px;
   padding-bottom: 10px;
-  float: left;
+  background-size:100% 100%;
 }
 
+@media only screen and (max-width: 600px) {
+    .slideshow {
+		width:100%;
+    }
+}
 /* Hide the images by default */
 .mySlides {
 	display:none;
@@ -194,15 +213,8 @@ This class makes the topnav look good on small screens (display the links vertic
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 10s;
   animation-name: fade;
   animation-duration: 10s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -221,7 +233,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .footer a {
-	color: #4D565E;
+  color: #4D565E;
   display: block;
   text-align: center;
 }
@@ -309,6 +321,7 @@ label{
     margin:auto;
 }
 
+
 .cinema-nav{
     margin-bottom:20px;
     margin-top:20px;
@@ -358,4 +371,6 @@ label{
 
 .cinema-image{
     width:100%;
+}
+
 }

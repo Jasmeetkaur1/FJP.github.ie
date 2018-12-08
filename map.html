@@ -51,7 +51,7 @@
 <!--heading, banner, and search bar-->
   <div class="head">
     <div class="header">
-			</br>
+			<br />
 			<h1>NCI Shopping Centre</h1>
 		</div>
     <div class="search_bar">
@@ -72,7 +72,7 @@
 		<a href="Newsletter.html">Newsletter</a>
 		<a class="active" href="map.html">About Us</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  	<i class="fa fa-bars"></i>
+  	<i class="fa fa-bars"></i></a>
 	</div>
 
   <script>
@@ -89,48 +89,51 @@
   	<!--main panel, with advertising section and links-->
 		<div class="social_media">
 			<a class="facebook" href="http://www.facebook.com" title="facebook link">
-				<img src="images/facebook.png" alt="facebooklink"/>
+				<img src="images/facebook.png" alt="facebook link"/>
 			</a>
 			<a class="twitter" href="http://www.twitter.com" title="twitter link">
-				<img src="images/twitter.png" alt="twitterlink"/>
+				<img src="images/twitter.png" alt="twitter link"/>
 			</a>
 			<a href="https://www.instagram.com/ncirl/" title="Instagram link">
 				<img src="images/instagram.png" alt="instagram link"/>
 			</a>
 		</div>
 
-	  <div class="left_panel">
+	<div class="five columns">
+	 <div class="left_panel">
 
-	    <div class="opening_hours">
+		<div class="opening_hours">
 				<h4>Opening Hours</h4>
-	      <span class='left'>Monday</span>
-	      <span class='right'>9am - 9pm</span>
-	      <br/>
-	      <span class='left'>Tuesday</span>
-	      <span class='right'>9am - 9pm</span>
-	      <br/>
-	      <span class='left'>Wednesday</span>
-	      <span class='right'>9am - 9pm</span>
-	      <br/>
-	      <span class='left'>Thursday</span>
-	      <span class='right'>9am - 10pm</span>
-	      <br/>
-	      <span class='left'>Friday</span>
-	      <span class='right'>9am - 9pm</span>
-	      <br/>
-	      <span class='left'>Saturday</span>
-	      <span class='right'>9am - 7pm</span>
-	      <br/>
-	      <span class='left'>Sunday/BH</span>
-	      <span class='right'>9am - 7pm</span>
-	      <br/>
-	    </div>
+		  <span class='left'>Monday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Tuesday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Wednesday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Thursday</span>
+		  <span class='right'>9am - 10pm</span>
+		  <br/>
+		  <span class='left'>Friday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Saturday</span>
+		  <span class='right'>9am - 7pm</span>
+		  <br/>
+		  <span class='left'>Sunday/BH</span>
+		  <span class='right'>9am - 7pm</span>
+		  <br/>
+		</div>
 	  </div>
+	</div>
 
+<div class="seven columns">
 	<div class="info">
 		<ul>
 			<li>The NCI Shopping Centre has over 2000 free parking spaces surrounding the building. There are dedicated family spaces and disability spaces in convenient locations in each car park. Our extensive car parks are regularly patrolled by security, while being monitored by CCTV, to provide a safe and secure environment for our shoppers. Please note that parking at The NCI Shopping Centre is strictly for customers only! </li>
-			<li>You can now find directions from where you live to Mahon Point Shopping Centre by using the Route Planning tool on the AA Ireland website. Click here </li>
+			<li>You can now find directions from where you live to the NCI Shopping Centre by using the Route Planning tool on the AA Ireland website. </li>
 			<li>GPS COORDINATES: 53.3487194,-6.2430615</li>
 			<li>Eircode: DO1 Y300 </li>
 		</ul>
@@ -175,13 +178,13 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+	this.classList.toggle("active");
+	var content = this.nextElementSibling;
+	if (content.style.display === "block") {
+	  content.style.display = "none";
+	} else {
+	  content.style.display = "block";
+	}
   });
 }
 </script>
@@ -207,27 +210,27 @@ IFSC<br />
 Dublin 1</p>
 
 
-</div><script  src="http://www.google.com/jsapi"></script>
-<script type="text/javascript">
+<script  src="http://www.google.com/jsapi"></script>
+<script>
 
-    google.load("maps", "3",  {other_params:"sensor=false"});
+	google.load("maps", "3",  {other_params:"sensor=false"});
 
-    function initialize() {
-        var myLatlng = new google.maps.LatLng(53.349475,-6.243389);
-        var myOptions = {
-            zoom: 14,
-            center: myLatlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	function initialize() {
+		var myLatlng = new google.maps.LatLng(53.349475,-6.243389);
+		var myOptions = {
+			zoom: 14,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map
-        });
-    }
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map
+		});
+	}
 
-    google.setOnLoadCallback(initialize);
+	google.setOnLoadCallback(initialize);
 </script>
 
 
@@ -236,18 +239,20 @@ Dublin 1</p>
 
 
 
+
 <!--footer, with how to find us and other-->
-<div class="container"></div>
+
 <div class="footer">
 
 		<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
 		<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
 		<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
-		<div class="col-sm-2"><a href="#Customer Services">Customer Services</a></div>
+		<div class="col-sm-2"><a href="#Customer_Services">Customer Services</a></div>
 		<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
-		<div class="col-sm-2"><a href="#Delivery & Collection">Delivery & Collection</a></div>
+		<div class="col-sm-2"><a href="#Delivery&Collection">Delivery & Collection</a></div>
 
 </div>
+
 
 <hr />
 <p class="copyright">&copy; 2018 NCI Shopping Center<br />(Ireland) Limited </p> <!--making use of the charset for the copyright symbol-->

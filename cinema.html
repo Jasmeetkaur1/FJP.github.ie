@@ -28,15 +28,13 @@
 
 	 <!--link to css-->
 	 <link rel="stylesheet" href="projectstyles.css" type="text/css"/>
-	 <link rel="stylesheet" href="common.css" link type="text/css" />
-	 <link rel="stylesheet" href="Cinema.css" link type="text/css" />
 
 	 <!--bootstrap links-->
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	 <script type="text/javascript">
+	 <script>
         window.onload = function () {
             var min = 9;
             var sec = 59;
@@ -71,7 +69,7 @@
 <!--heading, banner, and search bar-->
   <div class="head">
     <div class="header">
-			</br>
+			<br />
 			<h1>NCI Shopping Centre</h1>
 		</div>
     <div class="search_bar">
@@ -92,7 +90,7 @@
 		<a href="Newsletter.html">Newsletter</a>
 		<a href="map.html">About Us</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  	<i class="fa fa-bars"></i>
+  	<i class="fa fa-bars"></i></a>
 	</div>
 
   <script>
@@ -119,192 +117,200 @@
 		</a>
 	</div>
 
-  <div class="left_panel">
+	<div class="five columns">
+	 <div class="left_panel">
 
-    <div class="opening_hours">
-			<h4>Opening Hours</h4>
-      <span class='left'>Monday</span>
-      <span class='right'>9am - 9pm</span>
-      <br/>
-      <span class='left'>Tuesday</span>
-      <span class='right'>9am - 9pm</span>
-      <br/>
-      <span class='left'>Wednesday</span>
-      <span class='right'>9am - 9pm</span>
-      <br/>
-      <span class='left'>Thursday</span>
-      <span class='right'>9am - 10pm</span>
-      <br/>
-      <span class='left'>Friday</span>
-      <span class='right'>9am - 9pm</span>
-      <br/>
-      <span class='left'>Saturday</span>
-      <span class='right'>9am - 7pm</span>
-      <br/>
-      <span class='left'>Sunday/BH</span>
-      <span class='right'>9am - 7pm</span>
-      <br/>
-    </div>
-  </div>
+		<div class="opening_hours">
+				<h4>Opening Hours</h4>
+		  <span class='left'>Monday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Tuesday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Wednesday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Thursday</span>
+		  <span class='right'>9am - 10pm</span>
+		  <br/>
+		  <span class='left'>Friday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Saturday</span>
+		  <span class='right'>9am - 7pm</span>
+		  <br/>
+		  <span class='left'>Sunday/BH</span>
+		  <span class='right'>9am - 7pm</span>
+		  <br/>
+		</div>
+	  </div>
+	</div>
 
 <!-- inputting code to make a slide show, had issues, where the image will stay for the 1.5s but will not go to the next image, code gotten from w3 schools-->
 	<!-- Slideshow container -->
 
-    <div class="cinema">
-        <form action="mailto: jasmeet.kaur@live.ie" method="post" enctype="text/plain">
-            <h2>Cinema</h2>
-            <div class="container cinema-nav">
-                <a href="#Whats On">Whats On</a>
-                <a href="#Coming Soon">Coming Soon</a>
-                <a href="#Offers">Offers</a>
-                <a href="#Big Screen Events">Big Screen Events</a>
-            </div>
-            <div class="container">
-                <div class="cn-left-panel">
-                    <div class="container">
-                        <div class="input-group">
+	<div class="row">
+		<div class="seven columns">
+		<div class="shop_container">
+			<div class="cinema">
+				<form action="mailto:jasmeet.kaur@live.ie" method="post" enctype="text/plain">
+					<h2>Cinema</h2>
+					<div class="container cinema-nav">
+						<a href="#Whats_On">Whats On</a>
+						<a href="#Coming_Soon">Coming Soon</a>
+						<a href="#Offers">Offers</a>
+						<a href="#Big_Screen_Events">Big Screen Events</a>
+					</div>
+					<div class="container">
+						<div class="cn-left-panel">
+							<div class="container">
+								<div class="input-group">
 
-                            <label>Please Select Movie</label>
-                            <select name="Movies" id="Movies" class="input-control">
-                                <option value="Toy Story">Toy Story </option>
-                                <option value="Frozen">Frozen</option>
-                                <option value="The Godfather">The Godfather</option>
-                                <option value="Lord of the Rings">Lord of the Rings</option>
-                                <option value="Gladiator">Gladiator </option>
-                                <option value="Titanic">Titanic</option>
-                                <option value="Rocky">Rocky</option>
-                                <option value="Jaws">Jaws</option>
-                            </select>
-                        </div>
+									<label>Please Select Movie</label>
+									<select name="Movies" id="Movies" class="input-control">
+										<option value="Toy Story">Toy Story </option>
+										<option value="Frozen">Frozen</option>
+										<option value="The Godfather">The Godfather</option>
+										<option value="Lord of the Rings">Lord of the Rings</option>
+										<option value="Gladiator">Gladiator </option>
+										<option value="Titanic">Titanic</option>
+										<option value="Rocky">Rocky</option>
+										<option value="Jaws">Jaws</option>
+									</select>
+								</div>
 
-                        <div class="input-group">
-                            <label>Select a Date</label>
-                            <input class="input-control input-date" type="date" name="date">
-                        </div>
+								<div class="input-group">
+									<label>Select a Date</label>
+									<input class="input-control input-date" type="date" name="date">
+								</div>
 
-                        <div class="input-group">
-                            <label>Select a Time:</label>
-                            <input class="input-control input-time" type="time" name="usr_time">
-                        </div>
+								<div class="input-group">
+									<label>Select a Time:</label>
+									<input class="input-control input-time" type="time" name="usr_time">
+								</div>
 
-                    </div>
-                    <div class="container">
-                        <span class="who-going">Who's Going?</span>
-                        <div class="input-group">
-                            <label for="cboAdults">Adult (&euro; 10.00)</label>
-                            <select name="cboAdults" id="cboAdults" class="input-control number-dropdown">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="cboChild">Child (&euro; 7.00)</label>
-                            <select id="cboChild" class="input-control number-dropdown">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
+							</div>
+							<div class="container">
+								<span class="who-going">Who's Going?</span>
+								<div class="input-group">
+									<label for="cboAdults">Adult (&euro; 10.00)</label>
+									<select name="cboAdults" id="cboAdults" class="input-control number-dropdown">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+								<div class="input-group">
+									<label for="cboChild">Child (&euro; 7.00)</label>
+									<select id="cboChild" class="input-control number-dropdown">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
 
-                        <div class="input-group">
-                            <label for="cboTeen">Teen(&euro; 8.00)</label>
-                            <select id="cboTeen" class="input-control number-dropdown">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="cboStudent">Student (&euro; 9.00)</label>
-                            <select id="cboStudent" class="input-control number-dropdown">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="cboSenior">Senior (&euro; 9.00)</label>
-                            <select id="cboSenior" class="input-control number-dropdown">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="cboFamily">Family (2 Adults & 2 Children) (&euro; 35.00)</label>
-                            <select id="cboFamily" class="input-control number-dropdown">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
+								<div class="input-group">
+									<label for="cboTeen">Teen(&euro; 8.00)</label>
+									<select id="cboTeen" class="input-control number-dropdown">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+								<div class="input-group">
+									<label for="cboStudent">Student (&euro; 9.00)</label>
+									<select id="cboStudent" class="input-control number-dropdown">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+								<div class="input-group">
+									<label for="cboSenior">Senior (&euro; 9.00)</label>
+									<select id="cboSenior" class="input-control number-dropdown">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+								<div class="input-group">
+									<label for="cboFamily">Family (2 Adults & 2 Children) (&euro; 35.00)</label>
+									<select id="cboFamily" class="input-control number-dropdown">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
 
 
-                    </div>
+							</div>
 
-                    <button type="button" onclick="alert('Thank You for Booking with us')" class="button btn-primary">Submit</button>
-                </div>
-                <div class="cn-right-panel">
-                    <div class="timer" id="timer">
+							<button type="button" onclick="alert('Thank You for Booking with us')" class="button btn-primary">Submit</button>
+						</div>
+						<div class="cn-right-panel">
+							<div class="timer" id="timer">
 
-                    </div>
-                    <div class="cinema-image">
-                        <img src="images/CinemaImage.jpg" alt="This is cinema image" />
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
+							</div>
+							<div class="cinema-image">
+								<img src="images/CinemaImage.jpg" alt="This is cinema image" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
 
 		<!--footer, with how to find us and other-->
-		<div class="container"></div>
+
 		<div class="footer">
 
-				<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
-				<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
-				<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
-				<div class="col-sm-2"><a href="#Customer Services">Customer Services</a></div>
-				<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
-				<div class="col-sm-2"><a href="#Delivery & Collection">Delivery & Collection</a></div>
-
+			<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
+			<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
+			<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
+			<div class="col-sm-2"><a href="#Customer_Services">Customer Services</a></div>
+			<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
+			<div class="col-sm-2"><a href="#Delivery&Collection">Delivery & Collection</a></div>
 		</div>
+
 
 		<hr />
 		<p class="copyright">&copy; 2018 NCI Shopping Center<br />(Ireland) Limited </p> <!--making use of the charset for the copyright symbol-->

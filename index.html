@@ -41,24 +41,23 @@
 <!--logo in top left-->
   <div class="logo">
     <a href="index.html" title="NCI Shopping Centre" >
-      <img src="images/logo.png" alt="logo"/> <!-- Couldnt get the owl to stay small when using external-->
+      <img src="images/logo.png" alt="logo"/> 
     </a>
   </div>
 
 <!--heading, banner, and search bar-->
-  <div class="head">
+  
     <div class="header">
-			</br>
-			<h1>NCI Shopping Centre</h1>
-		</div>
-    <div class="search_bar">
-	<span>Anything we can help you find?</span>
-      <form class="search" action="index.html" method="get" name="search_form">
-        <input placeholder="e.g.Cinema times" type="text" class="input_one" name="search_site"/>
-        <input type="submit" value="Search" class="search_button"/>
-      </form>
-    </div>
+		<br />
+		<h1>NCI Shopping Centre</h1>
 	</div>
+	<div class="search_bar">
+		<span>Anything we can help you find?</span>
+		  <form class="search" action="index.html" method="get" name="search_form">
+			<input placeholder="e.g.Cinema times" type="text" class="input_one" name="search_site"/>
+			<input type="submit" value="Search" class="search_button"/>
+		  </form>
+    </div>
 
   <!--horizontal navigation bar-->
 	<div class="topnav" id="myTopnav">
@@ -69,34 +68,64 @@
 		<a href="Newsletter.html">Newsletter</a>
 		<a href="map.html">About Us</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  	<i class="fa fa-bars"></i>
+		<i class="fa fa-bars"></i></a>
 	</div>
 
   <script>
   function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
 </script>
+
+	<div class="five columns">
+	 <div class="left_panel">
+		<div class="opening_hours">
+				<h4>Opening Hours</h4>
+		  <span class='left'>Monday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Tuesday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Wednesday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Thursday</span>
+		  <span class='right'>9am - 10pm</span>
+		  <br/>
+		  <span class='left'>Friday</span>
+		  <span class='right'>9am - 9pm</span>
+		  <br/>
+		  <span class='left'>Saturday</span>
+		  <span class='right'>9am - 7pm</span>
+		  <br/>
+		  <span class='left'>Sunday/BH</span>
+		  <span class='right'>9am - 7pm</span>
+		  <br/>
+		</div>
+	  </div>
+	</div>
 
 <!-- inputting code to make a slide show, had issues, where the image will stay for the 1.5s but will not go to the next image, code gotten from w3 schools-->
 	<!-- Slideshow container -->
-
-	<div class="slideshow-container">
-  	<!-- Full-width images with number and caption text -->
-	  <span class="mySlides fade">
-			<img src="images/drive.png" alt="Christmas Decoration on snow">
-	  </span>
-	  <span class="mySlides fade">
-			<img src="images/gift.png" alt="Buy a gift for the one you love this christmas">
-	  </span>
-	  <span class="mySlides fade">
-			<img src="images/christmas.jpg" alt="Please drive safe this christmas">
-	  </span>
+	<div class="shop_container">
+		<div class="slideshow">
+		<!-- Full-width images with number and caption text -->
+		  <span class="mySlides fade">
+				<img src="images/drive.png" alt="Christmas Decoration on snow">
+		  </span>
+		  <span class="mySlides fade">
+				<img src="images/gift.png" alt="Buy a gift for the one you love this christmas">
+		  </span>
+		  <span class="mySlides fade">
+				<img src="images/christmas.jpg" alt="Please drive safe this christmas">
+		  </span>
+		</div>
 	</div>
 
 	<script>
@@ -118,17 +147,17 @@ function showSlides() {
 	</script>
 
 <!--footer, with how to find us and other-->
-<div class="container"></div>
-<div class="footer">
 
-		<div class="col-sm-2"><a href="map.html">Getting Here</a></div>
-		<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
-		<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
-		<div class="col-sm-2"><a href="#Customer Services">Customer Services</a></div>
-		<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
-		<div class="col-sm-2"><a href="#Delivery & Collection">Delivery & Collection</a></div>
+<div class="footer">
+	<div class="col-sm-2"><a href="map.html">About Us</a></div>
+	<div class="col-sm-2"><a href="#opportnities">Opportunities</a></div>
+	<div class="col-sm-2"><a href="#privacy">Privacy Policy</a></div>
+	<div class="col-sm-2"><a href="#Customer_Services">Customer Services</a></div>
+	<div class="col-sm-2"><a href="#FAQ">FAQ</a></div>
+	<div class="col-sm-2"><a href="#Delivery&Collection">Delivery & Collection</a></div>
 
 </div>
+
 
 <hr />
 <p class="copyright">&copy; 2018 NCI Shopping Center<br />(Ireland) Limited </p> <!--making use of the charset for the copyright symbol-->
