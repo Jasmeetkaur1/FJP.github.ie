@@ -181,7 +181,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .newsletter {
-	width:100%;
+	width:70%;
 	position:relative;
 	padding: 20px;
 }
@@ -259,7 +259,7 @@ label{
     display:inline-block;
     margin-bottom:5px;
     font-size:1em;
-    color:#b104f6;
+    color:#b666d2;
     font-weight:500;
 }
 
