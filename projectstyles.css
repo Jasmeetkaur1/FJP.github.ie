@@ -102,15 +102,11 @@ This class makes the topnav look good on small screens (display the links vertic
 
 .left_panel {
   float:left;
-  width: 15%;
-  content: "";
-  padding-right: 20px;
-  clear: both;
+  padding-right: 20px;  
   display: block;
 }
 
-.social_media {
-  width: 15%;
+.social_media {  
   float:left;
 }
 
@@ -125,18 +121,6 @@ This class makes the topnav look good on small screens (display the links vertic
   padding: 5px;
 }
 
-.opening_hours .left {
-}
-
-.opening_hours .right {
-  float: right;
-  text-align: left;
-}
-
-.info{
-  padding: 50px;
-}
-
 .main_panel {
   color: #AFCDEC;
   width: 80%;
@@ -145,8 +129,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .shop_container {
-	display: grid;
-	width: 70%;
+	display: grid;	
 	grid-template-columns: auto auto auto;
 	padding: 10px;
 }
@@ -181,7 +164,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .newsletter {
-	width:70%;
+	width:100%;
 	position:relative;
 	padding: 20px;
 }
@@ -248,19 +231,21 @@ This class makes the topnav look good on small screens (display the links vertic
 
 h2{
     font-size:2em;
-    color:#c84614
+    color:#c84614!important;
 }
 
 .container {
 	width: 100%;
 }
 
+
+
 label{
-    display:inline-block;
-    margin-bottom:5px;
-    font-size:1em;
-    color:#b666d2;
-    font-weight:500;
+    display:inline-block!important;
+    margin-bottom:5px!important;
+    font-size:1em!important;    
+    font-weight:700!important;
+    color:#337ab7!important;
 }
 
 .input-group{
@@ -271,9 +256,9 @@ label{
 .input-control{
    display: block;
    padding: 5px;
-   border: 1px solid #bebbbb;
-   border-radius:3px;
-   font-size:1em;
+   border: 1px solid #bebbbb!important;
+   border-radius:3px!important;
+   font-size:1em!important;
 }
 
 .button{
@@ -284,13 +269,12 @@ label{
 }
 
 .btn-primary{
-    color:white;
-    background-color:#b666d2;
+    color:white;    
 }
 
 .btn-reset{
-   background-color:#ffffff;
-   color:#b666d2;
+   background-color:#ffffff!important;
+   color:#337ab7!important;
 }
 
 .btn-cancel{
